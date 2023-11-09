@@ -1,0 +1,402 @@
+* {
+    font-family: arial;         /*Definindo uma fonte padrão*/
+}
+
+body{
+    margin:0;         /*Zera a margin e o padding definida automaticamente pelo navegador*/
+    padding:0;
+}
+header {
+    display: flex;             
+    justify-content: center;     /*Centraliza o cabeçalho da Página*/
+    height: 120px;              /*Altura do cabeçalho*/
+}
+.container {
+    display: flex; 
+    justify-content: space-between;      /*Alinhamento um ao lado do outro com mesmo tamanho*/
+    width: 990px;                       /*Largura máxima do cabeçalho*/
+}
+.logo {
+    display: flex;
+    align-items:center;     /*Alinhamento do Logo no cabeçlho*/
+    
+}
+.menu {
+    display: flex;
+    align-items:center;     /*Alinhamento dos itens no menu*/
+
+}
+nav ul,                 /*Menu de navegação em "nav"*/
+nav li {
+    list-style: none;    /*Retira os pontos dos icones do menu em lista*/
+    margin:0;           /*Zera a margin e o padding definida automaticamente pelo navegador*/
+    padding:0;
+}
+nav ul {
+    display: flex;      /*Define o menu lado a lado*/
+}
+nav a {
+    display: block;                /*Habilita a possibilidade de mudar o menu como quiser*/
+    padding: 15px;                /*Tamanho do espaço ao redor do menu*/
+    text-decoration: none;       /*Deixa o menu sem a marcação de link*/
+    text-transform: uppercase;  /*Deixa o menu com letras maiúsculas*/
+    color: #727272;          /*Cor das letras do menu*/
+}
+nav .active a,                     /*Define o  primeiro menu ativo e deixa selecioanado na cor azul*/
+nav a:hover {                     /*Habilita a animação de mudar a cor quando passar a seta do mouse no menu*/
+    background-color: #39aae1; /*cor de fundo do menu*/
+    color: #FFFFFF;
+}
+
+#banner {
+    background-image:url('../images/banner.png');  /*Imagem de fundo do banner*/
+    background-position: center;                  /*Posição da imagem*/
+    background-size: cover;                      /*A imagem vai ficar com um tamanho dependendo do dispositivo usado pra abrir a página*/
+    height: 670px;                              /*Altura da área do banner*/
+    display:flex;
+    justify-content: center                         /*Centraliza os elementos do banner*/
+}
+
+.column {
+    flex-direction: column;                   /*Alinhamento de coluna*/
+}
+.banner_headline {
+    flex:1;                         /*Tamanho adaptavel*/
+    display:flex;                  /*Alinhamento um ao lado do outro*/
+    flex-direction:column;        /*Alinhamento de coluna*/
+    justify-content:center;      /*Alinhamento centralizado*/
+}
+.banner_headline h1 {
+    color: #FFFFFF;          /*cor das letras*/
+    font-size: 70px;           /*tamanho das letras*/
+    text-shadow: 0px 1px 0px #555555;      /*sombreamento e cor da sombra*/
+    margin:0;
+    padding:0;
+    max-width: 350px;
+}
+.banner_headline h2 {
+    color: #FFFFFF;          /*cor das letras*/
+    font-size: 21px;           /*tamanho das letras*/
+    text-shadow: 0px 1px 0px #555555;      /*sombreamento e cor da sombra*/
+    margin:0;
+    padding:0;
+    max-width: 350px;               /*Tamanho máximo de largura*/
+    margin-top: 30px;              /*Espaçamento*/
+}   
+.banner_options {
+    height: 210px;                  /*Tamanho fixo*/
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex:1;                         /*POSICIONAMENTO*/
+    color: #FFFFFF;             /*Cor do texto*/
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;      /*Cor de fundo*/
+}
+.banner2 {
+    background-color: #0079c7;      /*Cor de fundo*/
+}
+.banner3 {
+    background-color: #2b4c99;      /*Cor de fundo*/
+}
+.banner_title {
+    font-size: 21px;                  /*Tamanho da fonte*/
+}
+.banner_desc {
+    font-size: 12px;                  /*Tamanho da fonte*/
+    margin-bottom: 20px;             /*Espaçamento lateral*/
+    margin-top: 20px;               /*Espaçamento superior e inferior*/
+}
+.banner_options a {
+    display: inline-block;         /*O botão acompanha o tamanho do texto*/
+    border: 1px solid #FFFFFF;  /*Espessura e cor do botão*/
+    padding: 5px;                /*Espaçamento*/
+    color: #FFFFFF;           /*Cor do texto*/
+    font-size: 13px;           /*Tamanho da fonte*/
+    text-decoration: none;    /*Tira o sublinhado de link*/ 
+}
+.banner_monday {
+    margin-bottom: 20px;             /*Espaçamento lateral*/
+    margin-top: 20px;  
+    word-spacing: 15px;
+}
+.banner_saturday {
+    margin-bottom: 20px;             /*Espaçamento lateral*/
+    margin-top: 20px;  
+    word-spacing: 15px;
+}
+.banner_sunday {
+    margin-bottom: 20px;             /*Espaçamento lateral*/
+    margin-top: 20px;
+    word-spacing: 15px; 
+}
+
+#geral {
+    display: flex;             
+    justify-content: center;     /*Centraliza o cabeçalho da Página*/
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+div.container_quadrados {
+    height:auto;
+}
+
+.quadrado1 {
+    width: 150px;
+    height: 150px;
+    float:right;
+    background-color: #36a9e1;
+}
+.quadrado2 {
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.quadrado3 {
+    width: 150px;
+    height: 150px;
+    float:right;
+    background-color: #36a9e1;
+}
+.quadrado4 {
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.quadrado5 {
+    width: 150px;
+    height: 150px;
+    float:right;    
+    background-color: #36a9e1;
+}
+.quadrado6 {
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    
+}
+article a {
+    text-decoration: none;
+}
+article .news_data {
+    display: flex;
+}
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_comments {
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news_thumbnail {
+    margin-top: 30px;
+}
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+article .news_resume {
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer_menu {
+    display: flex;
+}
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: #ffffff;
+}
+.fm_1 {
+    background-color: #39aae1;      /*Cor de fundo*/
+}
+.fm_2 {
+    background-color: #0079c7;      /*Cor de fundo*/
+}
+.fm_3 {
+    background-color: #2b4c99;      /*Cor de fundo*/
+}
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.footer_area {
+    display: flex;
+}
+.footer_areaitem {
+    flex: 1;
+    color: #ffffff;
+}
+.flexcolumn {
+    flex-direction: column;
+}
+
+footer .widget_title_text {    
+    color: #ffffff;
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.footer_areaitem h6 {
+    color:#36a9e1;
+}
+
+.footer_areaitem a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer_areaitem p {
+    font-size: 13px;
+}
+
+.widget_body_1 p {
+    color:#727272
+}
+
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width:600px) {
+
+    .banner_headline {
+        padding:20px;
+    }
+    .banner_headline h1 {
+        font-size:55px;
+    }
+    .banner_headline h2 {
+        font-size: 17px;    
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column
+        padding: 20px;
+    }
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
